@@ -1,0 +1,604 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:st1="urn:schemas-microsoft-com:office:smarttags" xmlns="http://www.w3.org/TR/REC-html40"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="ProgId" content="Word.Document">
+<meta name="Generator" content="Microsoft Word 11">
+<meta name="Originator" content="Microsoft Word 11">
+<link rel="File-List" href="imagenes/filelist.xml">
+<link rel="Edit-Time-Data" href="imagenes/editdata.mso">
+<link rel="OLE-Object-Data" href="imagenes/oledata.mso">
+<!--[if !mso]> <style> v\:* {behavior:url(#default#VML);} o\:* {behavior:url(#default#VML);} w\:* {behavior:url(#default#VML);} .shape {behavior:url(#default#VML);} </style> <![endif]--><title>LPC-Cepstrum</title>
+
+<o:smarttagtype namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="PersonName"></o:smarttagtype><!--[if gte mso 9]><xml> <o:DocumentProperties> <o:Author>Jhon Franko</o:Author> <o:LastAuthor>Luis Fernando</o:LastAuthor> <o:Revision>40</o:Revision> <o:TotalTime>73</o:TotalTime> <o:Created>2008-03-30T16:56:00Z</o:Created> <o:LastSaved>2008-03-31T12:17:00Z</o:LastSaved> <o:Pages>10</o:Pages> <o:Words>589</o:Words> <o:Characters>3240</o:Characters> <o:Company>Jorge Velarde</o:Company> <o:Lines>27</o:Lines> <o:Paragraphs>7</o:Paragraphs> <o:CharactersWithSpaces>3822</o:CharactersWithSpaces> <o:Version>11.9999</o:Version> </o:DocumentProperties> </xml><![endif]--><!--[if gte mso 9]><xml> <w:WordDocument> <w:Zoom>125</w:Zoom> <w:SpellingState>Clean</w:SpellingState> <w:GrammarState>Clean</w:GrammarState> <w:HyphenationZone>21</w:HyphenationZone> <w:PunctuationKerning/> <w:ValidateAgainstSchemas/> <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid> <w:IgnoreMixedContent>false</w:IgnoreMixedContent> <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText> <w:Compatibility> <w:BreakWrappedTables/> <w:SnapToGridInCell/> <w:WrapTextWithPunct/> <w:UseAsianBreakRules/> <w:DontGrowAutofit/> </w:Compatibility> <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel> </w:WordDocument> </xml><![endif]--><!--[if gte mso 9]><xml> <w:LatentStyles DefLockedState="false" LatentStyleCount="156"> </w:LatentStyles> </xml><![endif]--><!--[if !mso]><object classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object> <style> st1\:*{behavior:url(#ieooui) } </style> <![endif]-->
+<style>
+<!--
+/* Font Definitions */
+@font-face
+{font-family:Courier;
+panose-1:2 7 4 9 2 2 5 2 4 4;
+mso-font-alt:"Courier New";
+mso-font-charset:0;
+mso-generic-font-family:modern;
+mso-font-format:other;
+mso-font-pitch:fixed;
+mso-font-signature:3 0 0 0 1 0;}
+@font-face
+{font-family:Tahoma;
+panose-1:2 11 6 4 3 5 4 4 2 4;
+mso-font-charset:0;
+mso-generic-font-family:swiss;
+mso-font-pitch:variable;
+mso-font-signature:1627421319 -2147483648 8 0 66047 0;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+{mso-style-parent:"";
+margin:0cm;
+margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-size:12.0pt;
+font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";}
+h1
+{mso-style-update:auto;
+mso-style-next:Normal;
+margin-top:9.0pt;
+margin-right:0cm;
+margin-bottom:6.0pt;
+margin-left:1.4pt;
+text-align:center;
+text-indent:-1.4pt;
+mso-pagination:widow-orphan;
+page-break-after:avoid;
+mso-outline-level:1;
+mso-list:l0 level1 lfo2;
+tab-stops:list 18.0pt;
+font-size:12.0pt;
+font-family:"Times New Roman";
+mso-font-kerning:0pt;
+mso-bidi-font-weight:normal;}
+h2
+{mso-style-update:auto;
+mso-style-next:"Texto independiente";
+margin-top:9.0pt;
+margin-right:0cm;
+margin-bottom:6.0pt;
+margin-left:0cm;
+text-align:justify;
+text-indent:0cm;
+mso-pagination:widow-orphan;
+page-break-after:avoid;
+mso-outline-level:2;
+mso-list:l0 level2 lfo2;
+tab-stops:list 18.0pt;
+font-size:10.0pt;
+font-family:"Times New Roman";
+mso-bidi-font-style:italic;}
+h3
+{mso-style-update:auto;
+mso-style-next:Normal;
+margin-top:9.0pt;
+margin-right:0cm;
+margin-bottom:6.0pt;
+margin-left:0cm;
+text-align:justify;
+text-indent:0cm;
+mso-pagination:widow-orphan;
+page-break-after:avoid;
+mso-outline-level:3;
+mso-list:l0 level3 lfo2;
+tab-stops:28.8pt list 36.0pt;
+font-size:10.0pt;
+font-family:"Times New Roman";
+font-weight:normal;
+font-style:italic;
+mso-bidi-font-style:normal;}
+h4
+{mso-style-next:Normal;
+margin-top:12.0pt;
+margin-right:0cm;
+margin-bottom:3.0pt;
+margin-left:0cm;
+text-align:justify;
+text-indent:0cm;
+mso-pagination:widow-orphan;
+page-break-after:avoid;
+mso-outline-level:4;
+mso-list:l0 level4 lfo2;
+tab-stops:list 0cm;
+font-size:9.0pt;
+mso-bidi-font-size:10.0pt;
+font-family:"Times New Roman";
+mso-bidi-font-weight:normal;
+font-style:italic;
+mso-bidi-font-style:normal;}
+h5
+{mso-style-next:Normal;
+margin-top:12.0pt;
+margin-right:0cm;
+margin-bottom:3.0pt;
+margin-left:0cm;
+text-align:justify;
+text-indent:0cm;
+mso-pagination:widow-orphan;
+mso-outline-level:5;
+mso-list:l0 level5 lfo2;
+tab-stops:list 0cm;
+font-size:9.0pt;
+mso-bidi-font-size:10.0pt;
+font-family:"Times New Roman";
+font-weight:normal;}
+h6
+{mso-style-next:Normal;
+margin-top:12.0pt;
+margin-right:0cm;
+margin-bottom:3.0pt;
+margin-left:0cm;
+text-align:justify;
+text-indent:0cm;
+mso-pagination:widow-orphan;
+mso-outline-level:6;
+mso-list:l0 level6 lfo2;
+tab-stops:list 0cm;
+font-size:11.0pt;
+mso-bidi-font-size:10.0pt;
+font-family:Arial;
+mso-bidi-font-family:"Times New Roman";
+font-weight:normal;
+font-style:italic;
+mso-bidi-font-style:normal;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+{mso-style-next:Normal;
+margin-top:12.0pt;
+margin-right:0cm;
+margin-bottom:3.0pt;
+margin-left:0cm;
+text-align:justify;
+text-indent:0cm;
+mso-pagination:widow-orphan;
+mso-outline-level:7;
+mso-list:l0 level7 lfo2;
+tab-stops:list 0cm;
+font-size:9.0pt;
+mso-bidi-font-size:10.0pt;
+font-family:Arial;
+mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+{mso-style-next:Normal;
+margin-top:12.0pt;
+margin-right:0cm;
+margin-bottom:3.0pt;
+margin-left:0cm;
+text-align:justify;
+text-indent:0cm;
+mso-pagination:widow-orphan;
+mso-outline-level:8;
+mso-list:l0 level8 lfo2;
+tab-stops:list 0cm;
+font-size:9.0pt;
+mso-bidi-font-size:10.0pt;
+font-family:Arial;
+mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";
+font-style:italic;
+mso-bidi-font-style:normal;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+{mso-style-next:Normal;
+margin-top:12.0pt;
+margin-right:0cm;
+margin-bottom:3.0pt;
+margin-left:0cm;
+text-align:justify;
+text-indent:0cm;
+mso-pagination:widow-orphan;
+mso-outline-level:9;
+mso-list:l0 level9 lfo2;
+tab-stops:list 0cm;
+font-size:9.0pt;
+mso-bidi-font-size:10.0pt;
+font-family:Arial;
+mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";
+font-style:italic;
+mso-bidi-font-style:normal;}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+{mso-style-noshow:yes;
+margin:0cm;
+margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-size:10.0pt;
+font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+{mso-style-noshow:yes;
+mso-style-next:Normal;
+margin:0cm;
+margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-size:10.0pt;
+font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";
+font-weight:bold;}
+span.MsoCommentReference
+{mso-style-noshow:yes;
+mso-ansi-font-size:8.0pt;
+mso-bidi-font-size:8.0pt;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+{margin-top:0cm;
+margin-right:0cm;
+margin-bottom:6.0pt;
+margin-left:0cm;
+mso-pagination:widow-orphan;
+font-size:12.0pt;
+font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+{color:blue;
+text-decoration:underline;
+text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+{color:purple;
+text-decoration:underline;
+text-underline:single;}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+{mso-style-noshow:yes;
+mso-style-parent:"Texto comentario";
+mso-style-next:"Texto comentario";
+margin:0cm;
+margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-size:10.0pt;
+font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";
+font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+{mso-style-noshow:yes;
+margin:0cm;
+margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-size:8.0pt;
+font-family:Tahoma;
+mso-fareast-font-family:"Times New Roman";}
+p.email, li.email, div.email
+{mso-style-name:email;
+margin-top:3.0pt;
+margin-right:0cm;
+margin-bottom:0cm;
+margin-left:0cm;
+margin-bottom:.0001pt;
+text-align:center;
+mso-pagination:widow-orphan;
+font-size:9.0pt;
+mso-bidi-font-size:10.0pt;
+font-family:Courier;
+mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";}
+p.BodyTextNext, li.BodyTextNext, div.BodyTextNext
+{mso-style-name:"Body Text Next";
+mso-style-update:auto;
+mso-style-parent:"Texto independiente";
+margin:0cm;
+margin-bottom:.0001pt;
+text-align:justify;
+text-indent:14.4pt;
+mso-pagination:widow-orphan;
+font-size:9.0pt;
+mso-bidi-font-size:10.0pt;
+font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+{mso-style-name:"";
+mso-spl-e:yes;}
+span.GramE
+{mso-style-name:"";
+mso-gram-e:yes;}
+@page Section1
+{size:612.0pt 792.0pt;
+margin:72.0pt 90.0pt 72.0pt 90.0pt;
+mso-header-margin:35.4pt;
+mso-footer-margin:35.4pt;
+border:solid windowtext 1.0pt;
+mso-border-alt:solid windowtext .75pt;
+padding:24.0pt 24.0pt 24.0pt 24.0pt;
+mso-paper-source:0;}
+div.Section1
+{page:Section1;}
+/* List Definitions */
+@list l0
+{mso-list-id:-5;
+mso-list-template-ids:2037941970;}
+@list l0:level1
+{mso-level-style-link:"Título 1";
+mso-level-tab-stop:18.0pt;
+mso-level-number-position:left;
+margin-left:1.4pt;
+text-indent:-1.4pt;}
+@list l0:level2
+{mso-level-style-link:"Título 2";
+mso-level-text:"%1\.%2\.";
+mso-level-tab-stop:18.0pt;
+mso-level-number-position:left;
+margin-left:0cm;
+text-indent:0cm;}
+@list l0:level3
+{mso-level-style-link:"Título 3";
+mso-level-text:"%1\.%2\.%3\.";
+mso-level-tab-stop:36.0pt;
+mso-level-number-position:left;
+margin-left:0cm;
+text-indent:0cm;}
+@list l0:level4
+{mso-level-style-link:"Título 4";
+mso-level-text:"%1\.%2\.%3\.%4";
+mso-level-tab-stop:0cm;
+mso-level-number-position:left;
+margin-left:0cm;
+text-indent:0cm;}
+@list l0:level5
+{mso-level-style-link:"Título 5";
+mso-level-text:"%1\.%2\.%3\.%4\.%5";
+mso-level-tab-stop:0cm;
+mso-level-number-position:left;
+margin-left:0cm;
+text-indent:0cm;}
+@list l0:level6
+{mso-level-style-link:"Título 6";
+mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6";
+mso-level-tab-stop:0cm;
+mso-level-number-position:left;
+margin-left:0cm;
+text-indent:0cm;}
+@list l0:level7
+{mso-level-style-link:"Título 7";
+mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7";
+mso-level-tab-stop:0cm;
+mso-level-number-position:left;
+margin-left:0cm;
+text-indent:0cm;}
+@list l0:level8
+{mso-level-style-link:"Título 8";
+mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8";
+mso-level-tab-stop:0cm;
+mso-level-number-position:left;
+margin-left:0cm;
+text-indent:0cm;}
+@list l0:level9
+{mso-level-style-link:"Título 9";
+mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.%9";
+mso-level-tab-stop:0cm;
+mso-level-number-position:left;
+margin-left:0cm;
+text-indent:0cm;}
+ol
+{margin-bottom:0cm;}
+ul
+{margin-bottom:0cm;}
+-->
+</style><!--[if gte mso 10]> <style> /* Style Definitions */ table.MsoNormalTable {mso-style-name:"Tabla normal"; mso-tstyle-rowband-size:0; mso-tstyle-colband-size:0; mso-style-noshow:yes; mso-style-parent:""; mso-padding-alt:0cm 5.4pt 0cm 5.4pt; mso-para-margin:0cm; mso-para-margin-bottom:.0001pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:"Times New Roman"; mso-ansi-language:#0400; mso-fareast-language:#0400; mso-bidi-language:#0400;} table.MsoTableGrid {mso-style-name:"Tabla con cuadrícula"; mso-tstyle-rowband-size:0; mso-tstyle-colband-size:0; border:solid windowtext 1.0pt; mso-border-alt:solid windowtext .5pt; mso-padding-alt:0cm 5.4pt 0cm 5.4pt; mso-border-insideh:.5pt solid windowtext; mso-border-insidev:.5pt solid windowtext; mso-para-margin:0cm; mso-para-margin-bottom:.0001pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:"Times New Roman"; mso-ansi-language:#0400; mso-fareast-language:#0400; mso-bidi-language:#0400;} </style> <![endif]--><!--[if gte mso 9]><xml> <o:shapedefaults v:ext="edit" spidmax="1079"/> </xml><![endif]--><!--[if gte mso 9]><xml> <o:shapelayout v:ext="edit"> <o:idmap v:ext="edit" data="1"/> </o:shapelayout></xml><![endif]-->
+</head>
+<body style="background-color: rgb(255, 204, 153); background-image: url(imagenes/image001.jpg);" lang="ES" link="blue" vlink="purple">
+<!--[if gte mso 9]><xml> <v:background id="_x0000_s1025" o:bwmode="white" fillcolor="#fc9"> <v:fill src="imagenes/image001.jpg" o:title="Papiro" type="tile"/> </v:background></xml><![endif]-->
+<div class="Section1">
+<h4 style="text-align: center;" align="center"><span style="font-size: 14pt;">“Extracción de características de <st1:personname productid="LA SE&#65489;AL DE" w:st="on"><st1:personname productid="LA SE&#65489;AL" w:st="on">la señal</st1:personname>
+de</st1:personname> voz utilizando LPC-<span class="SpellE">Cepstrum</span>”<o:p></o:p></span></h4>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal" style="text-align: center;" align="center"><span style="font-size: 11pt;">Jorge
+Velarde, <span class="SpellE">Jhon</span> <span class="SpellE">Franko</span>,<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Pretel Jesús, Alicia <span class="SpellE">Isolina</span><o:p></o:p></span></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="email"><a href="mailto:jhonfk_sc@hotmail.com"><span style="font-family: &quot;Times New Roman&quot;;">jhonfk_sc@hotmail.com</span></a>,<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><a href="mailto:ross_steward@hotmail.com"><span style="font-family: &quot;Times New Roman&quot;;">ross_steward@hotmail.com</span></a>
+</p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal"><b style="">Descripción
+del
+Proyecto:<o:p></o:p></b></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoBodyText">En el presente trabajo se
+implementa el método de
+extracción de características: Codificación de Predicción Lineal y
+análisis <span class="SpellE">cepstral</span> (LPC-<span class="SpellE">Cepstrum</span>). Es decir
+combina los dos procesos con el fin de hacerlo un método más fiable.</p>
+<p class="MsoBodyText">Todo parte de obtener los “p”
+coeficientes de predicción
+lineal, a través de la siguiente ecuación:</p>
+<p class="MsoBodyText" style="text-align: center;" align="center"><span style="" lang="EN-US"><span style="position: relative; top: 12pt;"><!--[if gte vml 1]><v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f"> <v:stroke joinstyle="miter"/> <v:formulas> <v:f eqn="if lineDrawn pixelLineWidth 0"/> <v:f eqn="sum @0 1 0"/> <v:f eqn="sum 0 0 @1"/> <v:f eqn="prod @2 1 2"/> <v:f eqn="prod @3 21600 pixelWidth"/> <v:f eqn="prod @3 21600 pixelHeight"/> <v:f eqn="sum @0 0 1"/> <v:f eqn="prod @6 1 2"/> <v:f eqn="prod @7 21600 pixelWidth"/> <v:f eqn="sum @8 21600 0"/> <v:f eqn="prod @7 21600 pixelHeight"/> <v:f eqn="sum @10 21600 0"/> </v:formulas> <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/> <o:lock v:ext="edit" aspectratio="t"/> </v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:84.75pt; height:30.75pt' o:ole="" fillcolor="window"> <v:imagedata src="imagenes/image027.wmz" o:title=""/> </v:shape><![endif]--><!--[if !vml]--><img src="imagenes/image015.gif" v:shapes="_x0000_i1025" border="0" height="41" width="113"><!--[endif]--></span><!--[if gte mso 9]><xml> <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1025" DrawAspect="Content" ObjectID="_1268453029"> </o:OLEObject> </xml><![endif]--><o:p></o:p></span></p>
+<p class="MsoBodyText">Entonces “p” saldrá en un valor de
+12 o 14, nosotros utilizaremos
+14 para nuestros fines.</p>
+<p class="MsoBodyText">Estos coeficientes<span style="">&nbsp;
+</span>son el resultado de la siguiente ecuación:</p>
+<p class="MsoBodyText"><o:p>&nbsp;</o:p></p>
+<p class="MsoBodyText" style="text-align: center;" align="center"><span style="" lang="EN-US"><span style="position: relative; top: 14pt;"><!--[if gte vml 1]><v:shape id="_x0000_i1026" type="#_x0000_t75" style='width:225pt;height:33.75pt' o:ole=""> <v:imagedata src="imagenes/image028.wmz" o:title=""/> </v:shape><![endif]--><!--[if !vml]--><img src="imagenes/image005.gif" v:shapes="_x0000_i1026" border="0" height="45" width="300"><!--[endif]--></span><!--[if gte mso 9]><xml> <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1026" DrawAspect="Content" ObjectID="_1268453030"> </o:OLEObject> </xml><![endif]--></span><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>(1)</p>
+<p class="MsoBodyText"><span style="">En este
+punto
+podemos reconocer claramente que la obtención del parámetro de
+correlación
+lineal </span><span style="" lang="EN-US"><span style="position: relative; top: 6pt;"><!--[if gte vml 1]><v:shape id="_x0000_i1027" type="#_x0000_t75" style='width:23.25pt;height:18pt' o:ole="" fillcolor="window"> <v:imagedata src="imagenes/image029.wmz" o:title=""/> </v:shape><![endif]--><!--[if !vml]--><img src="imagenes/image007.gif" v:shapes="_x0000_i1027" border="0" height="24" width="31"><!--[endif]--></span><!--[if gte mso 9]><xml> <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1027" DrawAspect="Content" ObjectID="_1268453031"> </o:OLEObject> </xml><![endif]--></span><span style="">, está en función
+de la autocorrelación de los valores de la señal en una trama dada. Así
+podemos
+utilizar la siguiente función:<o:p></o:p></span></p>
+<p class="MsoBodyText" style="text-align: center;" align="center"><!--[if gte vml 1]><v:shape id="_x0000_i1028" type="#_x0000_t75" style='width:149.25pt;height:27pt' o:ole=""> <v:imagedata src="imagenes/image030.wmz" o:title=""/> </v:shape><![endif]--><!--[if !vml]--><img src="imagenes/image009.gif" v:shapes="_x0000_i1028" border="0" height="36" width="199"><!--[endif]--><!--[if gte mso 9]><xml> <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1028" DrawAspect="Content" ObjectID="_1268453032"> </o:OLEObject> </xml><![endif]--><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>(2)</p>
+<p class="MsoBodyText">Sustituyendo la ecuación<span style="">&nbsp;
+</span>2 en la 1, tenemos:</p>
+<p class="MsoBodyText"><o:p>&nbsp;</o:p></p>
+<p class="MsoBodyText" style="text-align: center;" align="center"><!--[if gte vml 1]><v:shape id="_x0000_i1029" type="#_x0000_t75" style='width:105pt;height:33.75pt' o:ole=""> <v:imagedata src="imagenes/image031.wmz" o:title=""/> </v:shape><![endif]--><!--[if !vml]--><img src="imagenes/image011.gif" v:shapes="_x0000_i1029" border="0" height="45" width="140"><!--[endif]--><!--[if gte mso 9]><xml> <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1029" DrawAspect="Content" ObjectID="_1268453033"> </o:OLEObject> </xml><![endif]--><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>(3)</p>
+<p class="MsoBodyText">Que al resolverlo por el método de
+autocorrelación
+obtenemos:</p>
+<p class="MsoBodyText" style="text-align: center;" align="center"><span style="" lang="EN-US"><span style="position: relative; top: 14pt;"><!--[if gte vml 1]><v:shape id="_x0000_i1030" type="#_x0000_t75" style='width:221.25pt;height:33.75pt' o:ole=""> <v:imagedata src="imagenes/image032.wmz" o:title=""/> </v:shape><![endif]--><!--[if !vml]--><img src="imagenes/image013.gif" v:shapes="_x0000_i1030" border="0" height="45" width="295"><!--[endif]--></span><!--[if gte mso 9]><xml> <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1030" DrawAspect="Content" ObjectID="_1268453034"> </o:OLEObject> </xml><![endif]--></span><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>(4)</p>
+<p class="MsoBodyText"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal">Las ecuaciones de predicción lineal
+quedan:</p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal" style="text-align: center;" align="center"><span style="" lang="EN-US"><span style="position: relative; top: 14pt;"><!--[if gte vml 1]><v:shape id="_x0000_i1031" type="#_x0000_t75" style='width:119.25pt;height:33.75pt' o:ole=""> <v:imagedata src="imagenes/image033.wmz" o:title=""/> </v:shape><![endif]--><!--[if !vml]--><img src="imagenes/image003.gif" v:shapes="_x0000_i1031" border="0" height="45" width="159"><!--[endif]--></span><!--[if gte mso 9]><xml> <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1031" DrawAspect="Content" ObjectID="_1268453035"> </o:OLEObject> </xml><![endif]--></span><span style="">&nbsp;&nbsp; </span><span style="" lang="EN-US"><span style="position: relative; top: 5pt;"><!--[if gte vml 1]><v:shape id="_x0000_i1032" type="#_x0000_t75" style='width:42pt;height:15.75pt' o:ole=""> <v:imagedata src="imagenes/image034.wmz" o:title=""/> </v:shape><![endif]--><!--[if !vml]--><img src="imagenes/image017.gif" v:shapes="_x0000_i1032" border="0" height="21" width="56"><!--[endif]--></span><!--[if gte mso 9]><xml> <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1032" DrawAspect="Content" ObjectID="_1268453036"> </o:OLEObject> </xml><![endif]--></span><span style="">&nbsp;&nbsp;</span>(5)</p>
+<p class="MsoNormal">Y pueden expresarse también en forma
+matricial como</p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal" style="text-align: center;" align="center"><!--[if gte vml 1]><v:shape id="_x0000_i1033" type="#_x0000_t75" style='width:229.5pt;height:70.5pt' o:ole=""> <v:imagedata src="imagenes/image035.wmz" o:title=""/> </v:shape><![endif]--><!--[if !vml]--><img src="imagenes/image019.gif" v:shapes="_x0000_i1033" border="0" height="94" width="306"><!--[endif]--><!--[if gte mso 9]><xml> <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1033" DrawAspect="Content" ObjectID="_1268453037"> </o:OLEObject> </xml><![endif]--><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>(6)</p>
+<p class="MsoNormal">De este modo para obtener los
+coeficientes<!--[if gte vml 1]><v:shape id="_x0000_i1034" type="#_x0000_t75" style='width:23.25pt;height:18pt' o:ole="" fillcolor="window"> <v:imagedata src="imagenes/image029.wmz" o:title=""/> </v:shape><![endif]--><!--[if !vml]-->
+<img src="imagenes/image020.gif" v:shapes="_x0000_i1034" border="0" height="24" width="31"><!--[endif]--><!--[if gte mso 9]><xml> <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1034" DrawAspect="Content" ObjectID="_1268453038"> </o:OLEObject> </xml><![endif]-->,
+sólo multiplicamos el vector de autocorrelación <span class="GramE">R(</span>i)
+con la inversa de la matriz de autocorrelación R(<span class="SpellE">i,k</span>).</p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="BodyTextNext" style="text-indent: 0cm;"><span style="font-size: 12pt;">Ahora
+los coeficientes cepstrales son obtenidos de la<span style="">&nbsp;
+</span>siguiente recursión:<o:p></o:p></span></p>
+<p class="BodyTextNext" style="text-indent: 0cm;"><span style="font-size: 12pt;"><o:p>&nbsp;</o:p></span></p>
+<p class="BodyTextNext" style="text-align: center; text-indent: 0cm;" align="center"><span style="font-size: 12pt;" lang="EN-US"><span style="position: relative; top: 5pt;"><!--[if gte vml 1]><v:shape id="_x0000_i1035" type="#_x0000_t75" style='width:48.75pt;height:17.25pt' o:ole="" fillcolor="window"> <v:imagedata src="imagenes/image036.wmz" o:title=""/> </v:shape><![endif]--><!--[if !vml]--><img src="imagenes/image022.gif" v:shapes="_x0000_i1035" border="0" height="23" width="65"><!--[endif]--></span><!--[if gte mso 9]><xml> <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1035" DrawAspect="Content" ObjectID="_1268453039"> </o:OLEObject> </xml><![endif]--></span><span style="font-size: 12pt;"><o:p></o:p></span></p>
+<p class="BodyTextNext" style="text-align: center; text-indent: 0cm;" align="center"><span style="font-size: 12pt;" lang="EN-US"><span style="position: relative; top: 15pt;"><!--[if gte vml 1]><v:shape id="_x0000_i1036" type="#_x0000_t75" style='width:159pt;height:35.25pt' o:ole="" fillcolor="window"> <v:imagedata src="imagenes/image037.wmz" o:title=""/> </v:shape><![endif]--><!--[if !vml]--><img src="imagenes/image024.gif" v:shapes="_x0000_i1036" border="0" height="47" width="212"><!--[endif]--></span><!--[if gte mso 9]><xml> <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1036" DrawAspect="Content" ObjectID="_1268453040"> </o:OLEObject> </xml><![endif]--></span><span style="font-size: 12pt;">,<span style="">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size: 12pt;" lang="EN-US"><span style="position: relative; top: 5pt;"><!--[if gte vml 1]><v:shape id="_x0000_i1037" type="#_x0000_t75" style='width:44.25pt;height:15.75pt' o:ole="" fillcolor="window"> <v:imagedata src="imagenes/image038.wmz" o:title=""/> </v:shape><![endif]--><!--[if !vml]--><img src="imagenes/image026.gif" v:shapes="_x0000_i1037" border="0" height="21" width="59"><!--[endif]--></span><!--[if gte mso 9]><xml> <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1037" DrawAspect="Content" ObjectID="_1268453041"> </o:OLEObject> </xml><![endif]--></span><span style="font-size: 12pt;"><o:p></o:p></span></p>
+<p class="BodyTextNext" style="text-indent: 0cm;"><span style="font-size: 12pt;"><o:p>&nbsp;</o:p></span></p>
+<p class="BodyTextNext" style="text-indent: 0cm;"><span style="font-size: 12pt;">En
+el proceso de implementación se implantaron todos estos pasos teóricos,
+<span class="SpellE">realizandose</span> las
+pruebas, con las voces de 7 personas, 10
+palabras para cada una, <span class="SpellE">tomandose</span>
+como plantilla de
+entrenamiento a las 3 primeras y a las otras 4 para el reconocimiento.<span style="">&nbsp; </span>Cabe mencionar que la <span class="SpellE">implementaciñon</span>
+se realizó en el lenguaje de programación orientado a objetos JAVA.<o:p></o:p></span></p>
+<p class="BodyTextNext" style="text-indent: 0cm;"><span style="font-size: 12pt;"><o:p>&nbsp;</o:p></span></p>
+<p class="BodyTextNext" style="text-indent: 0cm;"><span style="font-size: 12pt;">Los
+resultados fueron:<o:p></o:p></span></p>
+<p class="BodyTextNext" style="text-indent: 0cm;"><span style="font-size: 12pt;"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal"><b style="">Proceso de
+entrenamiento:<o:p></o:p></b></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal" style="text-align: center;" align="center"><span style="" lang="EN-US"><!--[if gte vml 1]><v:shape id="_x0000_i1038" type="#_x0000_t75" style='width:444.75pt;height:328.5pt'> <v:imagedata src="imagenes/image002.png" o:title=""/> </v:shape><![endif]--><!--[if !vml]--><img src="imagenes/image010.jpg" v:shapes="_x0000_i1038" border="0" height="438" width="593"><!--[endif]--><o:p></o:p></span></p>
+<p class="MsoNormal" style="border: medium none ; padding: 0cm;"><span style="" lang="EN-US"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="border: medium none ; padding: 0cm;">Para las 4
+primeras palabras de
+la plantilla 1 se muestra los siguientes resultados:</p>
+<p class="MsoNormal" style="border: medium none ; padding: 0cm;"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal"><span class="SpellE">Abajo.wav</span></p>
+<p class="MsoNormal">ALMACENADO en <span class="SpellE">posicion</span>:
+1</p>
+<p class="MsoNormal" style="border: medium none ; padding: 0cm;"><span class="SpellE">Tamanho</span>
+de la matriz de <span class="SpellE">caracteristicas</span>:
+14x74</p>
+<p class="MsoNormal" style="border: medium none ; padding: 0cm;"><!--[if gte vml 1]><v:line id="_x0000_s1059" style='position:absolute;z-index:4;mso-position-horizontal:absolute; mso-position-vertical:absolute' from="-.75pt,8.3pt" to="449.25pt,8.3pt"/><![endif]--><!--[if !vml]--><span style="position: relative; z-index: 4; left: -2px; top: 10px; width: 602px; height: 12px;"><img src="imagenes/image045.gif" v:shapes="_x0000_s1059" height="2" width="602"></span><!--[endif]--><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<br style="" clear="all">
+<p class="MsoNormal"><span class="SpellE">Abrir.wav</span></p>
+<p class="MsoNormal">ALMACENADO en <span class="SpellE">posicion</span>:
+2</p>
+<p class="MsoNormal" style="border: medium none ; padding: 0cm;"><span class="SpellE">Tamanho</span>
+de la matriz de <span class="SpellE">caracteristicas</span>:
+14x65</p>
+<p class="MsoNormal" style="border: medium none ; padding: 0cm;"><!--[if gte vml 1]><v:line id="_x0000_s1060" style='position:absolute;z-index:5;mso-position-horizontal:absolute; mso-position-vertical:absolute' from="-1.5pt,5.25pt" to="448.5pt,5.25pt"/><![endif]--><!--[if !vml]--><span style="position: relative; z-index: 5; left: -3px; top: 6px; width: 602px; height: 8px;"><img src="imagenes/image046.gif" v:shapes="_x0000_s1060" height="2" width="602"></span><!--[endif]--><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<br style="" clear="all">
+<p class="MsoNormal"><span class="SpellE">Adios.wav</span></p>
+<p class="MsoNormal">ALMACENADO en <span class="SpellE">posicion</span>:
+3</p>
+<p class="MsoNormal" style="border: medium none ; padding: 0cm;"><span class="SpellE">Tamanho</span>
+de la matriz de <span class="SpellE">caracteristicas</span>:
+14x59</p>
+<p class="MsoNormal" style="border: medium none ; padding: 0cm;"><!--[if gte vml 1]><v:line id="_x0000_s1061" style='position:absolute;z-index:6;mso-position-horizontal:absolute; mso-position-vertical:absolute' from="0,3.6pt" to="450pt,3.6pt"/><![endif]--><!--[if !vml]--><span style="position: relative; z-index: 6; left: -1px; top: 4px; width: 602px; height: 6px;"><img src="imagenes/image046.gif" v:shapes="_x0000_s1061" height="2" width="602"></span><!--[endif]--><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<br style="" clear="all">
+<p class="MsoNormal"><span class="SpellE">Arriba.wav</span></p>
+<p class="MsoNormal">ALMACENADO en <span class="SpellE">posicion</span>:
+4</p>
+<p class="MsoNormal" style="border: medium none ; padding: 0cm;"><!--[if gte vml 1]><v:line id="_x0000_s1063" style='position:absolute;z-index:7; mso-position-horizontal:absolute;mso-position-vertical:absolute' from="0,18.65pt" to="450pt,18.65pt"/><![endif]--><!--[if !vml]--><span style="position: absolute; z-index: 7; margin-left: -1px; margin-top: 24px; width: 602px; height: 2px;"><img src="imagenes/image046.gif" v:shapes="_x0000_s1063" height="2" width="602"></span><!--[endif]--><span class="SpellE">Tamanho</span> de
+la matriz de <span class="SpellE">caracteristicas</span>:
+14x70</p>
+<p class="MsoNormal" style="border: medium none ; padding: 0cm;"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"><br style="page-break-before: always;" clear="all">
+</span>
+<p class="MsoNormal"><span class="SpellE"><b style=""><span style="" lang="EN-US">Proceso</span></b></span><b style=""><span style="" lang="EN-US"> de
+<span class="SpellE">reconocimiento</span>:<o:p></o:p></span></b></p>
+<p class="MsoNormal"><span style="" lang="EN-US"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal" style="text-align: center;" align="center"><span style="" lang="EN-US"><!--[if gte vml 1]><v:shape id="_x0000_i1039" type="#_x0000_t75" style='width:453pt;height:333.75pt'> <v:imagedata src="imagenes/image006.png" o:title=""/> </v:shape><![endif]--><!--[if !vml]--><img src="imagenes/image012.jpg" v:shapes="_x0000_i1039" border="0" height="445" width="604"><!--[endif]--><o:p></o:p></span></p>
+<p class="MsoNormal"><span style="" lang="EN-US"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal">Los resultados del proceso de
+reconocimiento tomando como
+muestras a 4 palabras de la plantilla 4 que sirve para el
+reconocimiento:</p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal">Distancia <span class="SpellE">minima</span>
+es:
+2.059549230503775</p>
+<p class="MsoNormal">La palabra aproximada es la que se
+encuentra en la <span class="SpellE">posicion</span>:
+11</p>
+<p class="MsoNormal"><span class="SpellE">Caracteristicas</span>
+</p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal">Archivo: <span class="SpellE">abajo.wav</span>
+<span class="SpellE">NroBytes</span>: 20414 <span class="SpellE">Frames</span>: 10207</p>
+<p class="MsoNormal"><!--[if gte vml 1]><v:line id="_x0000_s1041" style='position:absolute; z-index:1' from="0,9.4pt" to="450pt,9.4pt"/><![endif]--><!--[if !vml]--><span style="position: relative; z-index: 1; left: -1px; top: 12px; width: 602px; height: 14px;"><img src="imagenes/image004.gif" v:shapes="_x0000_s1041" height="2" width="602"></span><!--[endif]--><o:p>&nbsp;</o:p></p>
+<br style="" clear="all">
+<p class="MsoNormal">Distancia <span class="SpellE">minima</span>
+es:
+1.3294234993372023</p>
+<p class="MsoNormal">La palabra aproximada es la que se
+encuentra en la <span class="SpellE">posicion</span>:
+2</p>
+<p class="MsoNormal"><span class="SpellE">Caracteristicas</span>
+</p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal">Archivo: <span class="SpellE">abrir.wav</span>
+<span class="SpellE">NroBytes</span>: 20966 <span class="SpellE">Frames</span>: 10483</p>
+<p class="MsoNormal"><!--[if gte vml 1]><v:line id="_x0000_s1042" style='position:absolute; z-index:2;mso-position-horizontal:absolute;mso-position-vertical:absolute' from="0,7.6pt" to="450pt,7.6pt"/><![endif]--><!--[if !vml]--><span style="position: relative; z-index: 2; left: -1px; top: 9px; width: 602px; height: 11px;"><img src="imagenes/image008.gif" v:shapes="_x0000_s1042" height="2" width="602"></span><!--[endif]--><o:p>&nbsp;</o:p></p>
+<br style="" clear="all">
+<p class="MsoNormal">Distancia <span class="SpellE">minima</span>
+es:
+1.523236641583987</p>
+<p class="MsoNormal">La palabra aproximada es la que se
+encuentra en la <span class="SpellE">posicion</span>:
+13</p>
+<p class="MsoNormal"><span class="SpellE">Caracteristicas</span>
+</p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal">Archivo: <span class="SpellE">adios.wav</span>
+<span class="SpellE">NroBytes</span>: 21734 <span class="SpellE">Frames</span>: 10867</p>
+<p class="MsoNormal"><!--[if gte vml 1]><v:line id="_x0000_s1043" style='position:absolute; z-index:3;mso-position-horizontal:absolute;mso-position-vertical:absolute' from="0,4.2pt" to="450pt,4.2pt"/><![endif]--><!--[if !vml]--><span style="position: relative; z-index: 3; left: -1px; top: 5px; width: 602px; height: 7px;"><img src="imagenes/image004.gif" v:shapes="_x0000_s1043" height="2" width="602"></span><!--[endif]--><o:p>&nbsp;</o:p></p>
+<br style="" clear="all">
+<p class="MsoNormal">Distancia <span class="SpellE">minima</span>
+es:
+1.635666624760965</p>
+<p class="MsoNormal">La palabra aproximada es la que se
+encuentra en la <span class="SpellE">posicion</span>:
+14</p>
+<p class="MsoNormal"><span class="SpellE">Caracteristicas</span>
+</p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal">Archivo: <span class="SpellE">arriba.wav</span>
+<span class="SpellE">NroBytes</span>: 21734 <span class="SpellE">Frames</span>: 10867</p>
+<p class="MsoNormal" style="text-align: center;" align="center"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></p>
+<table class="MsoTableGrid" style="border: medium none ; margin-left: 262.1pt; border-collapse: collapse;" border="1" cellpadding="0" cellspacing="0">
+<tbody>
+<tr style="height: 11.5pt;">
+<td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 273.2pt; height: 11.5pt;" valign="top" width="364">
+<p class="MsoNormal" style="text-align: center;" align="center">La información completa con aspectos teóricos
+y resultados puedes obtenerlo desde aquí:</p>
+<p class="MsoNormal" style="text-align: center;" align="center"><a href="../paper/paper.doc">Descargar
+<span class="SpellE">paper</span><o:p></o:p></a></p>
+<p class="MsoNormal" style="text-align: center;" align="center"><span class="SpellE">Codigo</span>
+Fuente del Proyecto disponible desde aquí:</p>
+<p class="MsoNormal" style="text-align: center;" align="center"><a href="../cf/src.rar"><span class="SpellE">Codigo</span> Fuente<o:p></o:p></a></p>
+<p class="MsoNormal" style="text-align: center;" align="center"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="BodyTextNext" style="text-indent: 0cm;"><span style="font-size: 12pt;"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body></html>

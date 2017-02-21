@@ -1,0 +1,1154 @@
+<html>
+<title>
+Experiment iris10fold05-Jan-2012
+</title>
+<hr><font size = "5">Data Set "iris10fold05-Jan-2012"</font>
+<hr><body>
+<font face="verdana" size = "3">
+<p><b> General Information:
+<table border="1">
+<tr><td bgcolor="ffbb99">Description:</td><td bgcolor="ffbb99">Data:5-01-2012, 15:22 pm. Experiment performend with 10 fold cross validation. We search the paramenters sigma and C, We use a random generator number with uniform pdf for construc the fuzzy numbers in the interval [0, sqrt(1/(2*gamma)]. We generate two random numbers and choose the max of them for each feature</td>
+</table>
+<p><b>File List:
+<table border="1">
+<tr><td bgcolor="aaccee"><b>1/(2*sigma^2)</td><td bgcolor="aaccee"><b>2^-10</td><td bgcolor="eeddaa"><b>2^-9</td><td bgcolor="bbeecc"><b>2^-8</td><td bgcolor="8899aa"><b>2^-7</td><td bgcolor="aaccee"><b>2^-6</td><td bgcolor="eeddaa"><b>2^-5</td><td bgcolor="bbeecc"><b>2^-4</td><td bgcolor="8899aa"><b>2^-3</td><td bgcolor="aaccee"><b>2^-2</td><td bgcolor="eeddaa"><b>2^-1</td><td bgcolor="bbeecc"><b>2^0</td><td bgcolor="8899aa"><b>2^1</td><td bgcolor="aaccee"><b>2^2</td><td bgcolor="eeddaa"><b>2^3</td><td bgcolor="bbeecc"><b>2^4</td></tr>
+<tr>
+<td bgcolor="99aaff">C^-1<tr>
+<td bgcolor="99aaff">fuzzyKernel:</td><td bgcolor="99aaff">82.979</td>
+<td bgcolor="99aaff">93.734</td>
+<td bgcolor="99aaff">94.865</td>
+<td bgcolor="99aaff">94.240</td>
+<td bgcolor="99aaff">95.103</td>
+<td bgcolor="99aaff">95.345</td>
+<td bgcolor="99aaff">96.577</td>
+<td bgcolor="99aaff">94.384</td>
+<td bgcolor="99aaff">93.759</td>
+<td bgcolor="99aaff">93.480</td>
+<td bgcolor="99aaff">95.575</td>
+<td bgcolor="99aaff">83.831</td>
+<td bgcolor="99aaff">62.775</td>
+<td bgcolor="99aaff">46.466</td>
+<td bgcolor="99aaff">29.262</td>
+</tr>
+<tr>
+<td bgcolor="99aaff">Rules:</td><td bgcolor="99aaff">120.000</td>
+<td bgcolor="99aaff">98.800</td>
+<td bgcolor="99aaff">77.500</td>
+<td bgcolor="99aaff">62.000</td>
+<td bgcolor="99aaff">55.000</td>
+<td bgcolor="99aaff">54.600</td>
+<td bgcolor="99aaff">58.800</td>
+<td bgcolor="99aaff">68.400</td>
+<td bgcolor="99aaff">81.300</td>
+<td bgcolor="99aaff">96.800</td>
+<td bgcolor="99aaff">113.300</td>
+<td bgcolor="99aaff">127.300</td>
+<td bgcolor="99aaff">132.500</td>
+<td bgcolor="99aaff">133.500</td>
+<td bgcolor="99aaff">134.000</td>
+</tr>
+<tr>
+<td bgcolor="ffbb99">PDFC:</td><td bgcolor="ffbb99">93.246</td>
+<td bgcolor="ffbb99">95.579</td>
+<td bgcolor="ffbb99">94.954</td>
+<td bgcolor="ffbb99">95.863</td>
+<td bgcolor="ffbb99">95.863</td>
+<td bgcolor="ffbb99">96.577</td>
+<td bgcolor="ffbb99">96.815</td>
+<td bgcolor="ffbb99">96.815</td>
+<td bgcolor="ffbb99">96.101</td>
+<td bgcolor="ffbb99">93.569</td>
+<td bgcolor="ffbb99">67.280</td>
+<td bgcolor="ffbb99">50.990</td>
+<td bgcolor="ffbb99">29.976</td>
+<td bgcolor="ffbb99">29.262</td>
+<td bgcolor="ffbb99">29.262</td>
+</tr>
+<tr>
+<td bgcolor="ffbb99">Rules:</td><td bgcolor="ffbb99">93.500</td>
+<td bgcolor="ffbb99">72.400</td>
+<td bgcolor="ffbb99">57.700</td>
+<td bgcolor="ffbb99">52.900</td>
+<td bgcolor="ffbb99">55.000</td>
+<td bgcolor="ffbb99">60.100</td>
+<td bgcolor="ffbb99">72.600</td>
+<td bgcolor="ffbb99">87.900</td>
+<td bgcolor="ffbb99">102.300</td>
+<td bgcolor="ffbb99">120.200</td>
+<td bgcolor="ffbb99">131.900</td>
+<td bgcolor="ffbb99">133.700</td>
+<td bgcolor="ffbb99">134.100</td>
+<td bgcolor="ffbb99">134.100</td>
+<td bgcolor="ffbb99">134.100</td>
+</tr>
+</td>
+</tr>
+<tr>
+<td bgcolor="99aaff">C^0<tr>
+<td bgcolor="99aaff">fuzzyKernel:</td><td bgcolor="99aaff">90.049</td>
+<td bgcolor="99aaff">93.156</td>
+<td bgcolor="99aaff">94.002</td>
+<td bgcolor="99aaff">95.192</td>
+<td bgcolor="99aaff">96.399</td>
+<td bgcolor="99aaff">89.383</td>
+<td bgcolor="99aaff">93.530</td>
+<td bgcolor="99aaff">92.271</td>
+<td bgcolor="99aaff">95.774</td>
+<td bgcolor="99aaff">94.643</td>
+<td bgcolor="99aaff">94.236</td>
+<td bgcolor="99aaff">94.152</td>
+<td bgcolor="99aaff">83.882</td>
+<td bgcolor="99aaff">62.191</td>
+<td bgcolor="99aaff">49.085</td>
+</tr>
+<tr>
+<td bgcolor="99aaff">Rules:</td><td bgcolor="99aaff">109.000</td>
+<td bgcolor="99aaff">88.300</td>
+<td bgcolor="99aaff">67.800</td>
+<td bgcolor="99aaff">53.800</td>
+<td bgcolor="99aaff">45.000</td>
+<td bgcolor="99aaff">45.200</td>
+<td bgcolor="99aaff">46.200</td>
+<td bgcolor="99aaff">53.500</td>
+<td bgcolor="99aaff">64.000</td>
+<td bgcolor="99aaff">81.100</td>
+<td bgcolor="99aaff">94.800</td>
+<td bgcolor="99aaff">113.900</td>
+<td bgcolor="99aaff">126.300</td>
+<td bgcolor="99aaff">132.200</td>
+<td bgcolor="99aaff">133.700</td>
+</tr>
+<tr>
+<td bgcolor="ffbb99">PDFC:</td><td bgcolor="ffbb99">93.871</td>
+<td bgcolor="ffbb99">94.389</td>
+<td bgcolor="ffbb99">94.954</td>
+<td bgcolor="ffbb99">95.863</td>
+<td bgcolor="ffbb99">95.863</td>
+<td bgcolor="ffbb99">97.321</td>
+<td bgcolor="ffbb99">96.696</td>
+<td bgcolor="ffbb99">96.815</td>
+<td bgcolor="ffbb99">96.815</td>
+<td bgcolor="ffbb99">95.387</td>
+<td bgcolor="ffbb99">93.569</td>
+<td bgcolor="ffbb99">68.814</td>
+<td bgcolor="ffbb99">50.990</td>
+<td bgcolor="ffbb99">29.976</td>
+<td bgcolor="ffbb99">29.262</td>
+</tr>
+<tr>
+<td bgcolor="ffbb99">Rules:</td><td bgcolor="ffbb99">87.200</td>
+<td bgcolor="ffbb99">65.600</td>
+<td bgcolor="ffbb99">53.000</td>
+<td bgcolor="ffbb99">45.200</td>
+<td bgcolor="ffbb99">42.000</td>
+<td bgcolor="ffbb99">45.400</td>
+<td bgcolor="ffbb99">55.000</td>
+<td bgcolor="ffbb99">68.500</td>
+<td bgcolor="ffbb99">86.900</td>
+<td bgcolor="ffbb99">101.500</td>
+<td bgcolor="ffbb99">119.400</td>
+<td bgcolor="ffbb99">131.700</td>
+<td bgcolor="ffbb99">133.700</td>
+<td bgcolor="ffbb99">134.100</td>
+<td bgcolor="ffbb99">134.100</td>
+</tr>
+</td>
+</tr>
+<tr>
+<td bgcolor="99aaff">C^1<tr>
+<td bgcolor="99aaff">fuzzyKernel:</td><td bgcolor="99aaff">92.174</td>
+<td bgcolor="99aaff">92.579</td>
+<td bgcolor="99aaff">92.841</td>
+<td bgcolor="99aaff">89.393</td>
+<td bgcolor="99aaff">92.388</td>
+<td bgcolor="99aaff">92.097</td>
+<td bgcolor="99aaff">89.858</td>
+<td bgcolor="99aaff">91.049</td>
+<td bgcolor="99aaff">92.884</td>
+<td bgcolor="99aaff">94.576</td>
+<td bgcolor="99aaff">96.220</td>
+<td bgcolor="99aaff">95.435</td>
+<td bgcolor="99aaff">92.287</td>
+<td bgcolor="99aaff">85.657</td>
+<td bgcolor="99aaff">61.347</td>
+</tr>
+<tr>
+<td bgcolor="99aaff">Rules:</td><td bgcolor="99aaff">110.100</td>
+<td bgcolor="99aaff">87.100</td>
+<td bgcolor="99aaff">66.000</td>
+<td bgcolor="99aaff">51.800</td>
+<td bgcolor="99aaff">40.400</td>
+<td bgcolor="99aaff">35.000</td>
+<td bgcolor="99aaff">36.400</td>
+<td bgcolor="99aaff">41.000</td>
+<td bgcolor="99aaff">48.100</td>
+<td bgcolor="99aaff">62.100</td>
+<td bgcolor="99aaff">78.400</td>
+<td bgcolor="99aaff">95.400</td>
+<td bgcolor="99aaff">113.000</td>
+<td bgcolor="99aaff">126.700</td>
+<td bgcolor="99aaff">132.600</td>
+</tr>
+<tr>
+<td bgcolor="ffbb99">PDFC:</td><td bgcolor="ffbb99">93.394</td>
+<td bgcolor="ffbb99">93.912</td>
+<td bgcolor="ffbb99">94.954</td>
+<td bgcolor="ffbb99">95.149</td>
+<td bgcolor="ffbb99">95.863</td>
+<td bgcolor="ffbb99">96.696</td>
+<td bgcolor="ffbb99">96.220</td>
+<td bgcolor="ffbb99">96.696</td>
+<td bgcolor="ffbb99">96.815</td>
+<td bgcolor="ffbb99">96.815</td>
+<td bgcolor="ffbb99">95.387</td>
+<td bgcolor="ffbb99">93.569</td>
+<td bgcolor="ffbb99">68.814</td>
+<td bgcolor="ffbb99">50.990</td>
+<td bgcolor="ffbb99">29.976</td>
+</tr>
+<tr>
+<td bgcolor="ffbb99">Rules:</td><td bgcolor="ffbb99">87.900</td>
+<td bgcolor="ffbb99">64.700</td>
+<td bgcolor="ffbb99">50.100</td>
+<td bgcolor="ffbb99">42.500</td>
+<td bgcolor="ffbb99">37.200</td>
+<td bgcolor="ffbb99">36.400</td>
+<td bgcolor="ffbb99">43.500</td>
+<td bgcolor="ffbb99">52.200</td>
+<td bgcolor="ffbb99">65.400</td>
+<td bgcolor="ffbb99">86.600</td>
+<td bgcolor="ffbb99">101.100</td>
+<td bgcolor="ffbb99">119.000</td>
+<td bgcolor="ffbb99">131.600</td>
+<td bgcolor="ffbb99">133.700</td>
+<td bgcolor="ffbb99">134.100</td>
+</tr>
+</td>
+</tr>
+<tr>
+<td bgcolor="99aaff">C^2<tr>
+<td bgcolor="99aaff">fuzzyKernel:</td><td bgcolor="99aaff">88.769</td>
+<td bgcolor="99aaff">93.871</td>
+<td bgcolor="99aaff">91.621</td>
+<td bgcolor="99aaff">92.532</td>
+<td bgcolor="99aaff">90.089</td>
+<td bgcolor="99aaff">89.888</td>
+<td bgcolor="99aaff">91.388</td>
+<td bgcolor="99aaff">91.101</td>
+<td bgcolor="99aaff">88.430</td>
+<td bgcolor="99aaff">92.277</td>
+<td bgcolor="99aaff">92.625</td>
+<td bgcolor="99aaff">92.956</td>
+<td bgcolor="99aaff">94.673</td>
+<td bgcolor="99aaff">91.751</td>
+<td bgcolor="99aaff">83.800</td>
+</tr>
+<tr>
+<td bgcolor="99aaff">Rules:</td><td bgcolor="99aaff">108.100</td>
+<td bgcolor="99aaff">87.500</td>
+<td bgcolor="99aaff">66.500</td>
+<td bgcolor="99aaff">51.100</td>
+<td bgcolor="99aaff">40.200</td>
+<td bgcolor="99aaff">34.400</td>
+<td bgcolor="99aaff">31.900</td>
+<td bgcolor="99aaff">32.200</td>
+<td bgcolor="99aaff">35.900</td>
+<td bgcolor="99aaff">48.800</td>
+<td bgcolor="99aaff">59.900</td>
+<td bgcolor="99aaff">77.700</td>
+<td bgcolor="99aaff">95.500</td>
+<td bgcolor="99aaff">111.600</td>
+<td bgcolor="99aaff">126.100</td>
+</tr>
+<tr>
+<td bgcolor="ffbb99">PDFC:</td><td bgcolor="ffbb99">94.109</td>
+<td bgcolor="ffbb99">94.627</td>
+<td bgcolor="ffbb99">94.002</td>
+<td bgcolor="ffbb99">95.298</td>
+<td bgcolor="ffbb99">95.298</td>
+<td bgcolor="ffbb99">94.673</td>
+<td bgcolor="ffbb99">96.696</td>
+<td bgcolor="ffbb99">96.220</td>
+<td bgcolor="ffbb99">96.696</td>
+<td bgcolor="ffbb99">96.815</td>
+<td bgcolor="ffbb99">96.815</td>
+<td bgcolor="ffbb99">95.387</td>
+<td bgcolor="ffbb99">93.569</td>
+<td bgcolor="ffbb99">68.814</td>
+<td bgcolor="ffbb99">50.990</td>
+</tr>
+<tr>
+<td bgcolor="ffbb99">Rules:</td><td bgcolor="ffbb99">87.200</td>
+<td bgcolor="ffbb99">64.900</td>
+<td bgcolor="ffbb99">49.900</td>
+<td bgcolor="ffbb99">38.500</td>
+<td bgcolor="ffbb99">33.600</td>
+<td bgcolor="ffbb99">30.500</td>
+<td bgcolor="ffbb99">33.400</td>
+<td bgcolor="ffbb99">40.800</td>
+<td bgcolor="ffbb99">51.400</td>
+<td bgcolor="ffbb99">65.300</td>
+<td bgcolor="ffbb99">86.100</td>
+<td bgcolor="ffbb99">100.900</td>
+<td bgcolor="ffbb99">118.800</td>
+<td bgcolor="ffbb99">131.600</td>
+<td bgcolor="ffbb99">133.700</td>
+</tr>
+</td>
+</tr>
+<tr>
+<td bgcolor="99aaff">C^3<tr>
+<td bgcolor="99aaff">fuzzyKernel:</td><td bgcolor="99aaff">89.424</td>
+<td bgcolor="99aaff">93.347</td>
+<td bgcolor="99aaff">89.182</td>
+<td bgcolor="99aaff">90.691</td>
+<td bgcolor="99aaff">94.411</td>
+<td bgcolor="99aaff">95.490</td>
+<td bgcolor="99aaff">89.548</td>
+<td bgcolor="99aaff">89.972</td>
+<td bgcolor="99aaff">88.654</td>
+<td bgcolor="99aaff">84.025</td>
+<td bgcolor="99aaff">90.657</td>
+<td bgcolor="99aaff">91.323</td>
+<td bgcolor="99aaff">93.139</td>
+<td bgcolor="99aaff">93.562</td>
+<td bgcolor="99aaff">91.183</td>
+</tr>
+<tr>
+<td bgcolor="99aaff">Rules:</td><td bgcolor="99aaff">107.000</td>
+<td bgcolor="99aaff">86.500</td>
+<td bgcolor="99aaff">65.300</td>
+<td bgcolor="99aaff">49.800</td>
+<td bgcolor="99aaff">37.700</td>
+<td bgcolor="99aaff">31.900</td>
+<td bgcolor="99aaff">29.900</td>
+<td bgcolor="99aaff">29.800</td>
+<td bgcolor="99aaff">31.100</td>
+<td bgcolor="99aaff">37.300</td>
+<td bgcolor="99aaff">46.300</td>
+<td bgcolor="99aaff">61.900</td>
+<td bgcolor="99aaff">76.400</td>
+<td bgcolor="99aaff">95.200</td>
+<td bgcolor="99aaff">112.700</td>
+</tr>
+<tr>
+<td bgcolor="ffbb99">PDFC:</td><td bgcolor="ffbb99">94.109</td>
+<td bgcolor="ffbb99">94.627</td>
+<td bgcolor="ffbb99">93.198</td>
+<td bgcolor="ffbb99">96.012</td>
+<td bgcolor="ffbb99">96.756</td>
+<td bgcolor="ffbb99">96.756</td>
+<td bgcolor="ffbb99">95.506</td>
+<td bgcolor="ffbb99">96.696</td>
+<td bgcolor="ffbb99">96.845</td>
+<td bgcolor="ffbb99">96.696</td>
+<td bgcolor="ffbb99">96.815</td>
+<td bgcolor="ffbb99">96.815</td>
+<td bgcolor="ffbb99">95.387</td>
+<td bgcolor="ffbb99">93.569</td>
+<td bgcolor="ffbb99">68.814</td>
+</tr>
+<tr>
+<td bgcolor="ffbb99">Rules:</td><td bgcolor="ffbb99">87.200</td>
+<td bgcolor="ffbb99">64.500</td>
+<td bgcolor="ffbb99">48.900</td>
+<td bgcolor="ffbb99">37.800</td>
+<td bgcolor="ffbb99">30.200</td>
+<td bgcolor="ffbb99">26.600</td>
+<td bgcolor="ffbb99">27.500</td>
+<td bgcolor="ffbb99">30.600</td>
+<td bgcolor="ffbb99">39.800</td>
+<td bgcolor="ffbb99">50.800</td>
+<td bgcolor="ffbb99">65.200</td>
+<td bgcolor="ffbb99">85.600</td>
+<td bgcolor="ffbb99">100.700</td>
+<td bgcolor="ffbb99">118.800</td>
+<td bgcolor="ffbb99">131.600</td>
+</tr>
+</td>
+</tr>
+<tr>
+<td bgcolor="99aaff">C^4<tr>
+<td bgcolor="99aaff">fuzzyKernel:</td><td bgcolor="99aaff">91.341</td>
+<td bgcolor="99aaff">93.484</td>
+<td bgcolor="99aaff">90.377</td>
+<td bgcolor="99aaff">91.854</td>
+<td bgcolor="99aaff">91.239</td>
+<td bgcolor="99aaff">87.252</td>
+<td bgcolor="99aaff">94.793</td>
+<td bgcolor="99aaff">86.328</td>
+<td bgcolor="99aaff">86.961</td>
+<td bgcolor="99aaff">91.332</td>
+<td bgcolor="99aaff">88.680</td>
+<td bgcolor="99aaff">90.804</td>
+<td bgcolor="99aaff">90.451</td>
+<td bgcolor="99aaff">95.742</td>
+<td bgcolor="99aaff">94.819</td>
+</tr>
+<tr>
+<td bgcolor="99aaff">Rules:</td><td bgcolor="99aaff">108.700</td>
+<td bgcolor="99aaff">87.300</td>
+<td bgcolor="99aaff">65.400</td>
+<td bgcolor="99aaff">47.900</td>
+<td bgcolor="99aaff">37.100</td>
+<td bgcolor="99aaff">31.200</td>
+<td bgcolor="99aaff">28.100</td>
+<td bgcolor="99aaff">25.400</td>
+<td bgcolor="99aaff">25.800</td>
+<td bgcolor="99aaff">31.000</td>
+<td bgcolor="99aaff">36.900</td>
+<td bgcolor="99aaff">45.100</td>
+<td bgcolor="99aaff">59.800</td>
+<td bgcolor="99aaff">78.100</td>
+<td bgcolor="99aaff">94.100</td>
+</tr>
+<tr>
+<td bgcolor="ffbb99">PDFC:</td><td bgcolor="ffbb99">94.109</td>
+<td bgcolor="ffbb99">94.627</td>
+<td bgcolor="ffbb99">92.573</td>
+<td bgcolor="ffbb99">94.107</td>
+<td bgcolor="ffbb99">95.298</td>
+<td bgcolor="ffbb99">96.756</td>
+<td bgcolor="ffbb99">96.756</td>
+<td bgcolor="ffbb99">95.506</td>
+<td bgcolor="ffbb99">96.696</td>
+<td bgcolor="ffbb99">96.845</td>
+<td bgcolor="ffbb99">96.696</td>
+<td bgcolor="ffbb99">96.815</td>
+<td bgcolor="ffbb99">96.815</td>
+<td bgcolor="ffbb99">95.387</td>
+<td bgcolor="ffbb99">93.569</td>
+</tr>
+<tr>
+<td bgcolor="ffbb99">Rules:</td><td bgcolor="ffbb99">87.200</td>
+<td bgcolor="ffbb99">65.100</td>
+<td bgcolor="ffbb99">48.400</td>
+<td bgcolor="ffbb99">37.300</td>
+<td bgcolor="ffbb99">29.200</td>
+<td bgcolor="ffbb99">23.800</td>
+<td bgcolor="ffbb99">22.800</td>
+<td bgcolor="ffbb99">24.600</td>
+<td bgcolor="ffbb99">29.500</td>
+<td bgcolor="ffbb99">39.700</td>
+<td bgcolor="ffbb99">50.400</td>
+<td bgcolor="ffbb99">65.000</td>
+<td bgcolor="ffbb99">85.500</td>
+<td bgcolor="ffbb99">100.700</td>
+<td bgcolor="ffbb99">118.800</td>
+</tr>
+</td>
+</tr>
+<tr>
+<td bgcolor="99aaff">C^5<tr>
+<td bgcolor="99aaff">fuzzyKernel:</td><td bgcolor="99aaff">94.031</td>
+<td bgcolor="99aaff">93.246</td>
+<td bgcolor="99aaff">90.746</td>
+<td bgcolor="99aaff">92.584</td>
+<td bgcolor="99aaff">89.021</td>
+<td bgcolor="99aaff">90.012</td>
+<td bgcolor="99aaff">92.063</td>
+<td bgcolor="99aaff">91.069</td>
+<td bgcolor="99aaff">89.315</td>
+<td bgcolor="99aaff">88.035</td>
+<td bgcolor="99aaff">86.047</td>
+<td bgcolor="99aaff">91.599</td>
+<td bgcolor="99aaff">87.005</td>
+<td bgcolor="99aaff">91.616</td>
+<td bgcolor="99aaff">93.452</td>
+</tr>
+<tr>
+<td bgcolor="99aaff">Rules:</td><td bgcolor="99aaff">108.300</td>
+<td bgcolor="99aaff">86.500</td>
+<td bgcolor="99aaff">64.000</td>
+<td bgcolor="99aaff">49.500</td>
+<td bgcolor="99aaff">35.300</td>
+<td bgcolor="99aaff">31.000</td>
+<td bgcolor="99aaff">28.000</td>
+<td bgcolor="99aaff">23.400</td>
+<td bgcolor="99aaff">25.900</td>
+<td bgcolor="99aaff">28.800</td>
+<td bgcolor="99aaff">29.000</td>
+<td bgcolor="99aaff">36.000</td>
+<td bgcolor="99aaff">46.900</td>
+<td bgcolor="99aaff">59.500</td>
+<td bgcolor="99aaff">80.200</td>
+</tr>
+<tr>
+<td bgcolor="ffbb99">PDFC:</td><td bgcolor="ffbb99">94.109</td>
+<td bgcolor="ffbb99">94.627</td>
+<td bgcolor="ffbb99">93.287</td>
+<td bgcolor="ffbb99">93.244</td>
+<td bgcolor="ffbb99">95.298</td>
+<td bgcolor="ffbb99">96.845</td>
+<td bgcolor="ffbb99">96.756</td>
+<td bgcolor="ffbb99">96.756</td>
+<td bgcolor="ffbb99">96.131</td>
+<td bgcolor="ffbb99">96.696</td>
+<td bgcolor="ffbb99">96.845</td>
+<td bgcolor="ffbb99">96.696</td>
+<td bgcolor="ffbb99">96.815</td>
+<td bgcolor="ffbb99">96.815</td>
+<td bgcolor="ffbb99">95.387</td>
+</tr>
+<tr>
+<td bgcolor="ffbb99">Rules:</td><td bgcolor="ffbb99">87.200</td>
+<td bgcolor="ffbb99">65.100</td>
+<td bgcolor="ffbb99">49.000</td>
+<td bgcolor="ffbb99">36.200</td>
+<td bgcolor="ffbb99">27.500</td>
+<td bgcolor="ffbb99">23.000</td>
+<td bgcolor="ffbb99">21.100</td>
+<td bgcolor="ffbb99">20.800</td>
+<td bgcolor="ffbb99">23.700</td>
+<td bgcolor="ffbb99">29.400</td>
+<td bgcolor="ffbb99">39.700</td>
+<td bgcolor="ffbb99">50.400</td>
+<td bgcolor="ffbb99">65.100</td>
+<td bgcolor="ffbb99">85.500</td>
+<td bgcolor="ffbb99">100.700</td>
+</tr>
+</td>
+</tr>
+<tr>
+<td bgcolor="99aaff">C^6<tr>
+<td bgcolor="99aaff">fuzzyKernel:</td><td bgcolor="99aaff">91.579</td>
+<td bgcolor="99aaff">93.246</td>
+<td bgcolor="99aaff">88.373</td>
+<td bgcolor="99aaff">87.683</td>
+<td bgcolor="99aaff">91.566</td>
+<td bgcolor="99aaff">86.506</td>
+<td bgcolor="99aaff">90.310</td>
+<td bgcolor="99aaff">91.764</td>
+<td bgcolor="99aaff">83.703</td>
+<td bgcolor="99aaff">89.185</td>
+<td bgcolor="99aaff">87.190</td>
+<td bgcolor="99aaff">85.812</td>
+<td bgcolor="99aaff">90.602</td>
+<td bgcolor="99aaff">92.549</td>
+<td bgcolor="99aaff">93.480</td>
+</tr>
+<tr>
+<td bgcolor="99aaff">Rules:</td><td bgcolor="99aaff">108.500</td>
+<td bgcolor="99aaff">88.800</td>
+<td bgcolor="99aaff">66.700</td>
+<td bgcolor="99aaff">47.400</td>
+<td bgcolor="99aaff">36.400</td>
+<td bgcolor="99aaff">29.900</td>
+<td bgcolor="99aaff">27.300</td>
+<td bgcolor="99aaff">23.100</td>
+<td bgcolor="99aaff">24.500</td>
+<td bgcolor="99aaff">26.100</td>
+<td bgcolor="99aaff">29.700</td>
+<td bgcolor="99aaff">30.500</td>
+<td bgcolor="99aaff">38.500</td>
+<td bgcolor="99aaff">44.200</td>
+<td bgcolor="99aaff">59.200</td>
+</tr>
+<tr>
+<td bgcolor="ffbb99">PDFC:</td><td bgcolor="ffbb99">94.109</td>
+<td bgcolor="ffbb99">94.627</td>
+<td bgcolor="ffbb99">93.049</td>
+<td bgcolor="ffbb99">93.720</td>
+<td bgcolor="ffbb99">95.060</td>
+<td bgcolor="ffbb99">95.298</td>
+<td bgcolor="ffbb99">96.845</td>
+<td bgcolor="ffbb99">96.756</td>
+<td bgcolor="ffbb99">96.131</td>
+<td bgcolor="ffbb99">96.131</td>
+<td bgcolor="ffbb99">96.696</td>
+<td bgcolor="ffbb99">96.845</td>
+<td bgcolor="ffbb99">96.696</td>
+<td bgcolor="ffbb99">96.815</td>
+<td bgcolor="ffbb99">96.815</td>
+</tr>
+<tr>
+<td bgcolor="ffbb99">Rules:</td><td bgcolor="ffbb99">87.200</td>
+<td bgcolor="ffbb99">65.100</td>
+<td bgcolor="ffbb99">50.100</td>
+<td bgcolor="ffbb99">36.600</td>
+<td bgcolor="ffbb99">27.900</td>
+<td bgcolor="ffbb99">21.000</td>
+<td bgcolor="ffbb99">19.300</td>
+<td bgcolor="ffbb99">18.900</td>
+<td bgcolor="ffbb99">19.800</td>
+<td bgcolor="ffbb99">23.500</td>
+<td bgcolor="ffbb99">29.500</td>
+<td bgcolor="ffbb99">39.600</td>
+<td bgcolor="ffbb99">50.300</td>
+<td bgcolor="ffbb99">65.400</td>
+<td bgcolor="ffbb99">85.500</td>
+</tr>
+</td>
+</tr>
+<tr>
+<td bgcolor="99aaff">C^7<tr>
+<td bgcolor="99aaff">fuzzyKernel:</td><td bgcolor="99aaff">88.978</td>
+<td bgcolor="99aaff">91.436</td>
+<td bgcolor="99aaff">85.034</td>
+<td bgcolor="99aaff">90.743</td>
+<td bgcolor="99aaff">88.941</td>
+<td bgcolor="99aaff">88.656</td>
+<td bgcolor="99aaff">86.908</td>
+<td bgcolor="99aaff">89.178</td>
+<td bgcolor="99aaff">82.882</td>
+<td bgcolor="99aaff">85.105</td>
+<td bgcolor="99aaff">84.521</td>
+<td bgcolor="99aaff">87.992</td>
+<td bgcolor="99aaff">84.328</td>
+<td bgcolor="99aaff">85.901</td>
+<td bgcolor="99aaff">90.656</td>
+</tr>
+<tr>
+<td bgcolor="99aaff">Rules:</td><td bgcolor="99aaff">107.700</td>
+<td bgcolor="99aaff">85.300</td>
+<td bgcolor="99aaff">66.100</td>
+<td bgcolor="99aaff">46.500</td>
+<td bgcolor="99aaff">37.400</td>
+<td bgcolor="99aaff">30.700</td>
+<td bgcolor="99aaff">28.200</td>
+<td bgcolor="99aaff">24.600</td>
+<td bgcolor="99aaff">25.900</td>
+<td bgcolor="99aaff">25.700</td>
+<td bgcolor="99aaff">26.600</td>
+<td bgcolor="99aaff">26.600</td>
+<td bgcolor="99aaff">31.900</td>
+<td bgcolor="99aaff">36.200</td>
+<td bgcolor="99aaff">46.400</td>
+</tr>
+<tr>
+<td bgcolor="ffbb99">PDFC:</td><td bgcolor="ffbb99">94.109</td>
+<td bgcolor="ffbb99">94.627</td>
+<td bgcolor="ffbb99">93.049</td>
+<td bgcolor="ffbb99">92.577</td>
+<td bgcolor="ffbb99">93.720</td>
+<td bgcolor="ffbb99">95.774</td>
+<td bgcolor="ffbb99">96.637</td>
+<td bgcolor="ffbb99">96.845</td>
+<td bgcolor="ffbb99">96.756</td>
+<td bgcolor="ffbb99">96.131</td>
+<td bgcolor="ffbb99">96.131</td>
+<td bgcolor="ffbb99">96.696</td>
+<td bgcolor="ffbb99">96.845</td>
+<td bgcolor="ffbb99">96.696</td>
+<td bgcolor="ffbb99">96.815</td>
+</tr>
+<tr>
+<td bgcolor="ffbb99">Rules:</td><td bgcolor="ffbb99">87.200</td>
+<td bgcolor="ffbb99">65.100</td>
+<td bgcolor="ffbb99">50.100</td>
+<td bgcolor="ffbb99">37.600</td>
+<td bgcolor="ffbb99">27.200</td>
+<td bgcolor="ffbb99">21.100</td>
+<td bgcolor="ffbb99">17.900</td>
+<td bgcolor="ffbb99">17.100</td>
+<td bgcolor="ffbb99">17.600</td>
+<td bgcolor="ffbb99">19.500</td>
+<td bgcolor="ffbb99">23.400</td>
+<td bgcolor="ffbb99">29.500</td>
+<td bgcolor="ffbb99">39.300</td>
+<td bgcolor="ffbb99">50.300</td>
+<td bgcolor="ffbb99">65.400</td>
+</tr>
+</td>
+</tr>
+<tr>
+<td bgcolor="99aaff">C^8<tr>
+<td bgcolor="99aaff">fuzzyKernel:</td><td bgcolor="99aaff">90.049</td>
+<td bgcolor="99aaff">90.526</td>
+<td bgcolor="99aaff">86.260</td>
+<td bgcolor="99aaff">87.658</td>
+<td bgcolor="99aaff">90.543</td>
+<td bgcolor="99aaff">89.735</td>
+<td bgcolor="99aaff">86.667</td>
+<td bgcolor="99aaff">90.126</td>
+<td bgcolor="99aaff">88.179</td>
+<td bgcolor="99aaff">85.804</td>
+<td bgcolor="99aaff">81.876</td>
+<td bgcolor="99aaff">83.308</td>
+<td bgcolor="99aaff">89.308</td>
+<td bgcolor="99aaff">86.146</td>
+<td bgcolor="99aaff">88.781</td>
+</tr>
+<tr>
+<td bgcolor="99aaff">Rules:</td><td bgcolor="99aaff">109.500</td>
+<td bgcolor="99aaff">87.300</td>
+<td bgcolor="99aaff">66.600</td>
+<td bgcolor="99aaff">45.600</td>
+<td bgcolor="99aaff">36.000</td>
+<td bgcolor="99aaff">29.000</td>
+<td bgcolor="99aaff">26.200</td>
+<td bgcolor="99aaff">26.100</td>
+<td bgcolor="99aaff">21.900</td>
+<td bgcolor="99aaff">25.600</td>
+<td bgcolor="99aaff">25.700</td>
+<td bgcolor="99aaff">26.100</td>
+<td bgcolor="99aaff">29.300</td>
+<td bgcolor="99aaff">30.300</td>
+<td bgcolor="99aaff">36.500</td>
+</tr>
+<tr>
+<td bgcolor="ffbb99">PDFC:</td><td bgcolor="ffbb99">94.109</td>
+<td bgcolor="ffbb99">94.627</td>
+<td bgcolor="ffbb99">93.049</td>
+<td bgcolor="ffbb99">92.577</td>
+<td bgcolor="ffbb99">93.720</td>
+<td bgcolor="ffbb99">95.149</td>
+<td bgcolor="ffbb99">96.399</td>
+<td bgcolor="ffbb99">97.470</td>
+<td bgcolor="ffbb99">96.845</td>
+<td bgcolor="ffbb99">96.756</td>
+<td bgcolor="ffbb99">96.131</td>
+<td bgcolor="ffbb99">96.131</td>
+<td bgcolor="ffbb99">96.696</td>
+<td bgcolor="ffbb99">96.845</td>
+<td bgcolor="ffbb99">96.696</td>
+</tr>
+<tr>
+<td bgcolor="ffbb99">Rules:</td><td bgcolor="ffbb99">87.200</td>
+<td bgcolor="ffbb99">65.100</td>
+<td bgcolor="ffbb99">50.100</td>
+<td bgcolor="ffbb99">38.000</td>
+<td bgcolor="ffbb99">27.900</td>
+<td bgcolor="ffbb99">19.400</td>
+<td bgcolor="ffbb99">17.600</td>
+<td bgcolor="ffbb99">15.900</td>
+<td bgcolor="ffbb99">16.200</td>
+<td bgcolor="ffbb99">17.000</td>
+<td bgcolor="ffbb99">19.500</td>
+<td bgcolor="ffbb99">23.600</td>
+<td bgcolor="ffbb99">29.400</td>
+<td bgcolor="ffbb99">39.300</td>
+<td bgcolor="ffbb99">50.300</td>
+</tr>
+</td>
+</tr>
+<tr>
+<td bgcolor="99aaff">C^9<tr>
+<td bgcolor="99aaff">fuzzyKernel:</td><td bgcolor="99aaff">91.282</td>
+<td bgcolor="99aaff">93.347</td>
+<td bgcolor="99aaff">88.788</td>
+<td bgcolor="99aaff">87.866</td>
+<td bgcolor="99aaff">86.320</td>
+<td bgcolor="99aaff">87.748</td>
+<td bgcolor="99aaff">91.219</td>
+<td bgcolor="99aaff">86.372</td>
+<td bgcolor="99aaff">85.795</td>
+<td bgcolor="99aaff">88.463</td>
+<td bgcolor="99aaff">87.564</td>
+<td bgcolor="99aaff">87.663</td>
+<td bgcolor="99aaff">83.065</td>
+<td bgcolor="99aaff">92.172</td>
+<td bgcolor="99aaff">87.804</td>
+</tr>
+<tr>
+<td bgcolor="99aaff">Rules:</td><td bgcolor="99aaff">108.600</td>
+<td bgcolor="99aaff">86.400</td>
+<td bgcolor="99aaff">65.100</td>
+<td bgcolor="99aaff">47.200</td>
+<td bgcolor="99aaff">35.900</td>
+<td bgcolor="99aaff">28.700</td>
+<td bgcolor="99aaff">25.500</td>
+<td bgcolor="99aaff">25.100</td>
+<td bgcolor="99aaff">25.800</td>
+<td bgcolor="99aaff">25.200</td>
+<td bgcolor="99aaff">27.300</td>
+<td bgcolor="99aaff">26.800</td>
+<td bgcolor="99aaff">26.600</td>
+<td bgcolor="99aaff">28.900</td>
+<td bgcolor="99aaff">31.100</td>
+</tr>
+<tr>
+<td bgcolor="ffbb99">PDFC:</td><td bgcolor="ffbb99">94.109</td>
+<td bgcolor="ffbb99">94.627</td>
+<td bgcolor="ffbb99">93.049</td>
+<td bgcolor="ffbb99">92.577</td>
+<td bgcolor="ffbb99">92.715</td>
+<td bgcolor="ffbb99">94.435</td>
+<td bgcolor="ffbb99">95.149</td>
+<td bgcolor="ffbb99">96.399</td>
+<td bgcolor="ffbb99">97.470</td>
+<td bgcolor="ffbb99">96.131</td>
+<td bgcolor="ffbb99">96.756</td>
+<td bgcolor="ffbb99">96.131</td>
+<td bgcolor="ffbb99">96.131</td>
+<td bgcolor="ffbb99">96.696</td>
+<td bgcolor="ffbb99">96.845</td>
+</tr>
+<tr>
+<td bgcolor="ffbb99">Rules:</td><td bgcolor="ffbb99">87.200</td>
+<td bgcolor="ffbb99">65.100</td>
+<td bgcolor="ffbb99">50.100</td>
+<td bgcolor="ffbb99">38.000</td>
+<td bgcolor="ffbb99">27.800</td>
+<td bgcolor="ffbb99">19.400</td>
+<td bgcolor="ffbb99">16.100</td>
+<td bgcolor="ffbb99">14.900</td>
+<td bgcolor="ffbb99">14.900</td>
+<td bgcolor="ffbb99">16.000</td>
+<td bgcolor="ffbb99">16.900</td>
+<td bgcolor="ffbb99">19.500</td>
+<td bgcolor="ffbb99">23.600</td>
+<td bgcolor="ffbb99">29.400</td>
+<td bgcolor="ffbb99">39.300</td>
+</tr>
+</td>
+</tr>
+<tr>
+<td bgcolor="99aaff">C^10<tr>
+<td bgcolor="99aaff">fuzzyKernel:</td><td bgcolor="99aaff">90.764</td>
+<td bgcolor="99aaff">93.912</td>
+<td bgcolor="99aaff">88.140</td>
+<td bgcolor="99aaff">87.644</td>
+<td bgcolor="99aaff">94.435</td>
+<td bgcolor="99aaff">92.048</td>
+<td bgcolor="99aaff">88.688</td>
+<td bgcolor="99aaff">89.635</td>
+<td bgcolor="99aaff">85.889</td>
+<td bgcolor="99aaff">92.669</td>
+<td bgcolor="99aaff">89.219</td>
+<td bgcolor="99aaff">86.877</td>
+<td bgcolor="99aaff">86.326</td>
+<td bgcolor="99aaff">86.110</td>
+<td bgcolor="99aaff">87.020</td>
+</tr>
+<tr>
+<td bgcolor="99aaff">Rules:</td><td bgcolor="99aaff">109.100</td>
+<td bgcolor="99aaff">89.300</td>
+<td bgcolor="99aaff">66.100</td>
+<td bgcolor="99aaff">47.900</td>
+<td bgcolor="99aaff">37.500</td>
+<td bgcolor="99aaff">29.300</td>
+<td bgcolor="99aaff">24.900</td>
+<td bgcolor="99aaff">24.600</td>
+<td bgcolor="99aaff">23.300</td>
+<td bgcolor="99aaff">24.700</td>
+<td bgcolor="99aaff">24.700</td>
+<td bgcolor="99aaff">24.400</td>
+<td bgcolor="99aaff">23.600</td>
+<td bgcolor="99aaff">30.300</td>
+<td bgcolor="99aaff">28.500</td>
+</tr>
+<tr>
+<td bgcolor="ffbb99">PDFC:</td><td bgcolor="ffbb99">94.109</td>
+<td bgcolor="ffbb99">94.627</td>
+<td bgcolor="ffbb99">93.049</td>
+<td bgcolor="ffbb99">92.577</td>
+<td bgcolor="ffbb99">92.239</td>
+<td bgcolor="ffbb99">94.622</td>
+<td bgcolor="ffbb99">95.149</td>
+<td bgcolor="ffbb99">95.149</td>
+<td bgcolor="ffbb99">96.399</td>
+<td bgcolor="ffbb99">97.470</td>
+<td bgcolor="ffbb99">96.131</td>
+<td bgcolor="ffbb99">96.756</td>
+<td bgcolor="ffbb99">96.131</td>
+<td bgcolor="ffbb99">96.131</td>
+<td bgcolor="ffbb99">96.696</td>
+</tr>
+<tr>
+<td bgcolor="ffbb99">Rules:</td><td bgcolor="ffbb99">87.200</td>
+<td bgcolor="ffbb99">65.100</td>
+<td bgcolor="ffbb99">50.100</td>
+<td bgcolor="ffbb99">38.000</td>
+<td bgcolor="ffbb99">28.600</td>
+<td bgcolor="ffbb99">20.700</td>
+<td bgcolor="ffbb99">15.500</td>
+<td bgcolor="ffbb99">14.100</td>
+<td bgcolor="ffbb99">14.200</td>
+<td bgcolor="ffbb99">14.700</td>
+<td bgcolor="ffbb99">15.900</td>
+<td bgcolor="ffbb99">16.800</td>
+<td bgcolor="ffbb99">19.600</td>
+<td bgcolor="ffbb99">23.500</td>
+<td bgcolor="ffbb99">29.400</td>
+</tr>
+</td>
+</tr>
+<tr>
+<td bgcolor="99aaff">C^11<tr>
+<td bgcolor="99aaff">fuzzyKernel:</td><td bgcolor="99aaff">91.916</td>
+<td bgcolor="99aaff">91.341</td>
+<td bgcolor="99aaff">85.281</td>
+<td bgcolor="99aaff">88.369</td>
+<td bgcolor="99aaff">89.769</td>
+<td bgcolor="99aaff">91.342</td>
+<td bgcolor="99aaff">89.607</td>
+<td bgcolor="99aaff">90.379</td>
+<td bgcolor="99aaff">87.555</td>
+<td bgcolor="99aaff">80.223</td>
+<td bgcolor="99aaff">87.747</td>
+<td bgcolor="99aaff">84.203</td>
+<td bgcolor="99aaff">86.409</td>
+<td bgcolor="99aaff">83.844</td>
+<td bgcolor="99aaff">87.185</td>
+</tr>
+<tr>
+<td bgcolor="99aaff">Rules:</td><td bgcolor="99aaff">108.100</td>
+<td bgcolor="99aaff">87.300</td>
+<td bgcolor="99aaff">64.500</td>
+<td bgcolor="99aaff">45.100</td>
+<td bgcolor="99aaff">36.500</td>
+<td bgcolor="99aaff">30.900</td>
+<td bgcolor="99aaff">28.000</td>
+<td bgcolor="99aaff">25.700</td>
+<td bgcolor="99aaff">22.700</td>
+<td bgcolor="99aaff">24.400</td>
+<td bgcolor="99aaff">26.400</td>
+<td bgcolor="99aaff">26.700</td>
+<td bgcolor="99aaff">28.600</td>
+<td bgcolor="99aaff">26.400</td>
+<td bgcolor="99aaff">26.800</td>
+</tr>
+<tr>
+<td bgcolor="ffbb99">PDFC:</td><td bgcolor="ffbb99">94.109</td>
+<td bgcolor="ffbb99">94.627</td>
+<td bgcolor="ffbb99">93.049</td>
+<td bgcolor="ffbb99">92.577</td>
+<td bgcolor="ffbb99">91.763</td>
+<td bgcolor="ffbb99">92.596</td>
+<td bgcolor="ffbb99">95.149</td>
+<td bgcolor="ffbb99">95.149</td>
+<td bgcolor="ffbb99">95.149</td>
+<td bgcolor="ffbb99">96.399</td>
+<td bgcolor="ffbb99">97.470</td>
+<td bgcolor="ffbb99">96.131</td>
+<td bgcolor="ffbb99">96.756</td>
+<td bgcolor="ffbb99">96.131</td>
+<td bgcolor="ffbb99">96.131</td>
+</tr>
+<tr>
+<td bgcolor="ffbb99">Rules:</td><td bgcolor="ffbb99">87.200</td>
+<td bgcolor="ffbb99">65.100</td>
+<td bgcolor="ffbb99">50.100</td>
+<td bgcolor="ffbb99">38.000</td>
+<td bgcolor="ffbb99">27.500</td>
+<td bgcolor="ffbb99">21.100</td>
+<td bgcolor="ffbb99">16.000</td>
+<td bgcolor="ffbb99">13.400</td>
+<td bgcolor="ffbb99">13.500</td>
+<td bgcolor="ffbb99">14.200</td>
+<td bgcolor="ffbb99">14.500</td>
+<td bgcolor="ffbb99">16.000</td>
+<td bgcolor="ffbb99">16.700</td>
+<td bgcolor="ffbb99">19.600</td>
+<td bgcolor="ffbb99">23.500</td>
+</tr>
+</td>
+</tr>
+<tr>
+<td bgcolor="99aaff">C^12<tr>
+<td bgcolor="99aaff">fuzzyKernel:</td><td bgcolor="99aaff">90.627</td>
+<td bgcolor="99aaff">94.389</td>
+<td bgcolor="99aaff">85.232</td>
+<td bgcolor="99aaff">85.202</td>
+<td bgcolor="99aaff">90.623</td>
+<td bgcolor="99aaff">89.676</td>
+<td bgcolor="99aaff">85.663</td>
+<td bgcolor="99aaff">91.147</td>
+<td bgcolor="99aaff">86.799</td>
+<td bgcolor="99aaff">76.402</td>
+<td bgcolor="99aaff">87.224</td>
+<td bgcolor="99aaff">86.050</td>
+<td bgcolor="99aaff">84.791</td>
+<td bgcolor="99aaff">86.509</td>
+<td bgcolor="99aaff">83.538</td>
+</tr>
+<tr>
+<td bgcolor="99aaff">Rules:</td><td bgcolor="99aaff">107.800</td>
+<td bgcolor="99aaff">85.300</td>
+<td bgcolor="99aaff">64.400</td>
+<td bgcolor="99aaff">47.700</td>
+<td bgcolor="99aaff">36.200</td>
+<td bgcolor="99aaff">30.900</td>
+<td bgcolor="99aaff">28.300</td>
+<td bgcolor="99aaff">24.900</td>
+<td bgcolor="99aaff">24.800</td>
+<td bgcolor="99aaff">25.100</td>
+<td bgcolor="99aaff">26.000</td>
+<td bgcolor="99aaff">26.700</td>
+<td bgcolor="99aaff">26.600</td>
+<td bgcolor="99aaff">24.300</td>
+<td bgcolor="99aaff">27.800</td>
+</tr>
+<tr>
+<td bgcolor="ffbb99">PDFC:</td><td bgcolor="ffbb99">94.109</td>
+<td bgcolor="ffbb99">94.627</td>
+<td bgcolor="ffbb99">93.049</td>
+<td bgcolor="ffbb99">92.577</td>
+<td bgcolor="ffbb99">91.763</td>
+<td bgcolor="ffbb99">93.480</td>
+<td bgcolor="ffbb99">95.149</td>
+<td bgcolor="ffbb99">95.149</td>
+<td bgcolor="ffbb99">95.149</td>
+<td bgcolor="ffbb99">95.982</td>
+<td bgcolor="ffbb99">97.232</td>
+<td bgcolor="ffbb99">97.470</td>
+<td bgcolor="ffbb99">96.131</td>
+<td bgcolor="ffbb99">96.756</td>
+<td bgcolor="ffbb99">96.131</td>
+</tr>
+<tr>
+<td bgcolor="ffbb99">Rules:</td><td bgcolor="ffbb99">87.200</td>
+<td bgcolor="ffbb99">65.100</td>
+<td bgcolor="ffbb99">50.100</td>
+<td bgcolor="ffbb99">38.000</td>
+<td bgcolor="ffbb99">27.500</td>
+<td bgcolor="ffbb99">21.700</td>
+<td bgcolor="ffbb99">16.700</td>
+<td bgcolor="ffbb99">13.300</td>
+<td bgcolor="ffbb99">13.000</td>
+<td bgcolor="ffbb99">13.400</td>
+<td bgcolor="ffbb99">14.000</td>
+<td bgcolor="ffbb99">14.600</td>
+<td bgcolor="ffbb99">16.000</td>
+<td bgcolor="ffbb99">16.600</td>
+<td bgcolor="ffbb99">19.600</td>
+</tr>
+</td>
+</tr>
+<tr>
+<td bgcolor="99aaff">C^13<tr>
+<td bgcolor="99aaff">fuzzyKernel:</td><td bgcolor="99aaff">90.624</td>
+<td bgcolor="99aaff">93.394</td>
+<td bgcolor="99aaff">87.139</td>
+<td bgcolor="99aaff">87.774</td>
+<td bgcolor="99aaff">85.843</td>
+<td bgcolor="99aaff">89.970</td>
+<td bgcolor="99aaff">92.390</td>
+<td bgcolor="99aaff">84.431</td>
+<td bgcolor="99aaff">83.404</td>
+<td bgcolor="99aaff">84.911</td>
+<td bgcolor="99aaff">85.799</td>
+<td bgcolor="99aaff">87.520</td>
+<td bgcolor="99aaff">91.752</td>
+<td bgcolor="99aaff">84.603</td>
+<td bgcolor="99aaff">83.328</td>
+</tr>
+<tr>
+<td bgcolor="99aaff">Rules:</td><td bgcolor="99aaff">108.900</td>
+<td bgcolor="99aaff">87.300</td>
+<td bgcolor="99aaff">66.100</td>
+<td bgcolor="99aaff">46.600</td>
+<td bgcolor="99aaff">36.700</td>
+<td bgcolor="99aaff">29.500</td>
+<td bgcolor="99aaff">25.000</td>
+<td bgcolor="99aaff">21.400</td>
+<td bgcolor="99aaff">24.200</td>
+<td bgcolor="99aaff">24.600</td>
+<td bgcolor="99aaff">24.000</td>
+<td bgcolor="99aaff">23.500</td>
+<td bgcolor="99aaff">26.100</td>
+<td bgcolor="99aaff">26.200</td>
+<td bgcolor="99aaff">25.300</td>
+</tr>
+<tr>
+<td bgcolor="ffbb99">PDFC:</td><td bgcolor="ffbb99">94.109</td>
+<td bgcolor="ffbb99">94.627</td>
+<td bgcolor="ffbb99">93.049</td>
+<td bgcolor="ffbb99">92.577</td>
+<td bgcolor="ffbb99">91.763</td>
+<td bgcolor="ffbb99">92.477</td>
+<td bgcolor="ffbb99">94.622</td>
+<td bgcolor="ffbb99">95.149</td>
+<td bgcolor="ffbb99">95.982</td>
+<td bgcolor="ffbb99">95.982</td>
+<td bgcolor="ffbb99">95.982</td>
+<td bgcolor="ffbb99">97.232</td>
+<td bgcolor="ffbb99">97.470</td>
+<td bgcolor="ffbb99">96.131</td>
+<td bgcolor="ffbb99">96.756</td>
+</tr>
+<tr>
+<td bgcolor="ffbb99">Rules:</td><td bgcolor="ffbb99">87.200</td>
+<td bgcolor="ffbb99">65.100</td>
+<td bgcolor="ffbb99">50.100</td>
+<td bgcolor="ffbb99">38.000</td>
+<td bgcolor="ffbb99">27.500</td>
+<td bgcolor="ffbb99">21.200</td>
+<td bgcolor="ffbb99">17.300</td>
+<td bgcolor="ffbb99">13.800</td>
+<td bgcolor="ffbb99">12.900</td>
+<td bgcolor="ffbb99">12.500</td>
+<td bgcolor="ffbb99">13.100</td>
+<td bgcolor="ffbb99">13.800</td>
+<td bgcolor="ffbb99">14.700</td>
+<td bgcolor="ffbb99">15.900</td>
+<td bgcolor="ffbb99">16.600</td>
+</tr>
+</td>
+</tr>
+<tr>
+<td bgcolor="99aaff">C^14<tr>
+<td bgcolor="99aaff">fuzzyKernel:</td><td bgcolor="99aaff">90.793</td>
+<td bgcolor="99aaff">93.484</td>
+<td bgcolor="99aaff">87.541</td>
+<td bgcolor="99aaff">83.040</td>
+<td bgcolor="99aaff">89.830</td>
+<td bgcolor="99aaff">90.525</td>
+<td bgcolor="99aaff">84.764</td>
+<td bgcolor="99aaff">83.383</td>
+<td bgcolor="99aaff">89.154</td>
+<td bgcolor="99aaff">84.047</td>
+<td bgcolor="99aaff">88.662</td>
+<td bgcolor="99aaff">85.956</td>
+<td bgcolor="99aaff">83.335</td>
+<td bgcolor="99aaff">84.161</td>
+<td bgcolor="99aaff">85.707</td>
+</tr>
+<tr>
+<td bgcolor="99aaff">Rules:</td><td bgcolor="99aaff">107.300</td>
+<td bgcolor="99aaff">87.800</td>
+<td bgcolor="99aaff">65.100</td>
+<td bgcolor="99aaff">48.800</td>
+<td bgcolor="99aaff">35.200</td>
+<td bgcolor="99aaff">28.700</td>
+<td bgcolor="99aaff">25.900</td>
+<td bgcolor="99aaff">22.700</td>
+<td bgcolor="99aaff">24.600</td>
+<td bgcolor="99aaff">25.800</td>
+<td bgcolor="99aaff">24.500</td>
+<td bgcolor="99aaff">25.300</td>
+<td bgcolor="99aaff">26.400</td>
+<td bgcolor="99aaff">26.900</td>
+<td bgcolor="99aaff">26.700</td>
+</tr>
+<tr>
+<td bgcolor="ffbb99">PDFC:</td><td bgcolor="ffbb99">94.109</td>
+<td bgcolor="ffbb99">94.627</td>
+<td bgcolor="ffbb99">93.049</td>
+<td bgcolor="ffbb99">92.577</td>
+<td bgcolor="ffbb99">91.763</td>
+<td bgcolor="ffbb99">92.477</td>
+<td bgcolor="ffbb99">94.006</td>
+<td bgcolor="ffbb99">95.149</td>
+<td bgcolor="ffbb99">95.149</td>
+<td bgcolor="ffbb99">95.982</td>
+<td bgcolor="ffbb99">95.982</td>
+<td bgcolor="ffbb99">95.982</td>
+<td bgcolor="ffbb99">97.232</td>
+<td bgcolor="ffbb99">97.470</td>
+<td bgcolor="ffbb99">96.131</td>
+</tr>
+<tr>
+<td bgcolor="ffbb99">Rules:</td><td bgcolor="ffbb99">87.200</td>
+<td bgcolor="ffbb99">65.100</td>
+<td bgcolor="ffbb99">50.100</td>
+<td bgcolor="ffbb99">38.000</td>
+<td bgcolor="ffbb99">27.500</td>
+<td bgcolor="ffbb99">21.200</td>
+<td bgcolor="ffbb99">17.400</td>
+<td bgcolor="ffbb99">14.800</td>
+<td bgcolor="ffbb99">12.600</td>
+<td bgcolor="ffbb99">12.800</td>
+<td bgcolor="ffbb99">12.600</td>
+<td bgcolor="ffbb99">13.000</td>
+<td bgcolor="ffbb99">13.800</td>
+<td bgcolor="ffbb99">14.700</td>
+<td bgcolor="ffbb99">15.900</td>
+</tr>
+</td>
+</tr>
+</table>
+</font>
+</body>
+</html>
